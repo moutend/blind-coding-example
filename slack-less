@@ -1,0 +1,8 @@
+#!/usr/bin/env ruby
+require './slack'
+team = Slack::Team.new
+ch_name = ARGV.include?('-c') ? ARGV[ARGV.index('-c') + 1] : 'general'
+opt = {:channel => team.channel[ch_name]}
+team.channels_history(opt).each do |m|
+  puts "#{team.user[m['user']]} #{m['text']}"
+  end

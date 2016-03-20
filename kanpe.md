@@ -1,0 +1,15 @@
+こんにちは！
+この動画では、私のように目の見えないエンジニアがMacでコードを書いている様子を紹介します。
+録音に使用しているsoundflowerの都合で、スクリーンリーダー(VoiceOver)の読み上げがもたついていますが、普段はこのようなディレイはありません。
+さて、今回はチャットサービスSlackのAPIを利用して、チャットの履歴を表示するCLIツールをRubyで作成していきます。
+まずは、以下のURLからAPIのトークンを発行します。
+https://my.slack.com/services/new/bot
+今回は実験用にmoutendというチームを作成したので、そこでbot1という名前のbotユーザーを作成し、APIを試します
+トークンは`./token`に保存して、環境変数として参照できるように設定しておきます。
+APIのドキュメントは、
+https://github.com/slackhq/slack-api-docs
+にありますので、説明は省きます。
+また、今回作成したものは
+https://github.com/moutend/blind-coding-example
+にて公開します
+それでは、コードを書いていきます
